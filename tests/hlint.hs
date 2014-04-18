@@ -8,5 +8,5 @@ import System.Exit
 main :: IO ()
 main = do
     args <- getArgs
-    hints <- hlint $ ["src"] ++ args
+    hints <- hlint $ "src" : args
     unless (null hints) exitFailure
