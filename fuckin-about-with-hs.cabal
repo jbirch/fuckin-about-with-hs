@@ -17,9 +17,19 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 executable fuckin-about-with-hs
-  main-is:             src/Main.hs
+  main-is:             Main.hs
+  ghc-options:         -Wall
   other-modules:       
   other-extensions:    
   build-depends:       base >=4.6 && <4.7
-  hs-source-dirs:      
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+
+test-suite hlint
+  type:                exitcode-stdio-1.0
+  main-is:             hlint.hs
+  ghc-options:         -Wall
+  hs-source-dirs:      tests
+  build-depends:       base,
+                       hlint >= 1.8 && < 1.9
   default-language:    Haskell2010
