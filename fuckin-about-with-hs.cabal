@@ -4,17 +4,22 @@
 name:                fuckin-about-with-hs
 version:             0.1.0.0
 synopsis:            Fucking about with haskell to get a simple webapp up and rolling.
--- description:         
+description:         Fucking about with haskell to get a simple webapp up and rolling.
 homepage:            www.jbirch.net
 license:             BSD3
 license-file:        LICENSE
 author:              Jason Birch
 maintainer:          jbirch@jbirch.net
--- copyright:           
+copyright:           BSD3
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
+
+source-repository head
+  type:                git
+  location:            git@github.com:jbirch/fuckin-about-with-hs.git
+
 
 executable fuckin-about-with-hs
   main-is:             Main.hs
