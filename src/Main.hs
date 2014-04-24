@@ -16,4 +16,4 @@ qsSeq (viewl -> x :< xs) = qsSeq less >< x <| qsSeq more
         more = filter (>= x) xs
 
 main :: IO ()
-main = print . qs $  [100, 99..0]
+main = print . (qs :: [Integer] -> [Integer]) $  [100, 99..0]
