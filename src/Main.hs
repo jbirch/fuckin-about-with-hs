@@ -1,4 +1,3 @@
-{-# LANGUAGE ViewPatterns #-}
 module Main (main) where
 
 import QS (qs)
