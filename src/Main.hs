@@ -1,6 +1,12 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Main (main) where
 
-import           QS (qs)
+--import           Data.Monoid (mconcat)
+--import           QS         (qs)
+import           Web.Scotty
 
 main :: IO ()
-main = print . (qs :: [Integer] -> [Integer]) $  [100, 99..0]
+main = scotty 3000 $ get "/" $ html "Derp"
+
+-- mconcat . show . (qs :: [Integer] -> [Integer]) $  [100, 99..0]
