@@ -3,9 +3,9 @@
 
 module Main (main) where
 
-import           Data.Aeson.Types
+import           Data.Aeson.Types (toJSON)
 import           QS               (qs)
-import           Web.Scotty
+import           Web.Scotty       (get, json, scotty)
 
 
 main :: IO ()
