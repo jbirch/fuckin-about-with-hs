@@ -25,6 +25,7 @@ executable fuckin-about-with-hs
   other-extensions:    
   build-depends:       base >= 4.6 && < 4.7,
                        containers >= 0.5.0.0,
+                       split >= 0.2.2 && < 0.3,
                        scotty >= 0.7.2 && < 0.8,
                        aeson >= 0.7.0.3 && < 0.8
   hs-source-dirs:      src
@@ -46,6 +47,7 @@ test-suite quickcheck
   hs-source-dirs:      tests src
   build-depends:       base,
                        containers >= 0.5.0.0,
+                       split >= 0.2.2 && < 0.3,
                        scotty >= 0.7.2 && < 0.8,
                        aeson >= 0.7.0.3 && < 0.8,
                        QuickCheck >= 2.7 && < 2.8,
