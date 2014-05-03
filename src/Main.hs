@@ -12,4 +12,4 @@ import           Web.Scotty       (get, json, param, scotty)
 main :: IO ()
 main = scotty 3000 $ get "/" $ do
          (parameter :: String) <- param "items"
-         json . toJSON .qs $ splitOn "," parameter
+         json . toJSON . qs $ splitOn "," parameter
