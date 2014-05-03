@@ -1,9 +1,9 @@
 {-# LANGUAGE ViewPatterns #-}
 module QS where
 
-import Prelude hiding (filter)
-import Data.Foldable (toList)
-import Data.Sequence
+import           Data.Foldable (toList)
+import           Data.Sequence
+import           Prelude       hiding (filter)
 
 qs :: Ord a => [a] -> [a]
 qs xs = toList . qsSeq . fromList $ xs
