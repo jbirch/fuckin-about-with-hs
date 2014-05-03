@@ -15,10 +15,10 @@ list. I think this technically makes it invalid JSON.
 Building and Running
 --------------------
 
-   cabal sandbox init
-   cabal configure
-   cabal install --only-dependencies
-   cabal run
+    cabal sandbox init
+    cabal configure
+    cabal install --only-dependencies
+    cabal run
 
 Testing details
 ---------------
