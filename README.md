@@ -16,7 +16,6 @@ Building and Running
 --------------------
 
     cabal sandbox init
-    cabal configure
     cabal install --only-dependencies
     cabal run
 
